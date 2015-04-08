@@ -1,0 +1,195 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminNew.master.cs" Inherits="BinaryOption.Admin.AdminNew" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <link rel="shortcut icon" href="../images/favicon(3).ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon(3).ico" type="image/x-icon">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet'
+        type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+  <%--  <title>::Binary Options::</title>--%>
+    <link href="../Styles/easy-responsive-tabs.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/msgBoxLight.css" rel="stylesheet" type="text/css" />
+    <script src='<%= ResolveClientUrl("~/Scripts/Plugins/jquery-1.11.1.min.js")%>' type="text/javascript"></script>
+    <script src='<%= ResolveClientUrl("~/Scripts/Plugins/easyResponsiveTabs.js")%>' type="text/javascript"></script>
+    <script src='<%= ResolveClientUrl("~/Scripts/Plugins/jquery.validationEngine.js") %>'
+        type="text/javascript"></script>
+    <script src='<%= ResolveClientUrl("~/Scripts/Plugins/jquery.validationEngine-en.js") %>'
+        type="text/javascript"></script>
+    <script src='<%= ResolveClientUrl("~/Scripts/Plugins/jquery.msgBox.js")%>' type="text/javascript"></script>
+    <script src='<%= ResolveClientUrl("~/Scripts/Plugins/jquery.toastmessage.tests.js")%>'
+        type="text/javascript"></script>
+    <script src='<%= ResolveClientUrl("~/Scripts/Plugins/Notification.js")%>' type="text/javascript"></script>
+    <%--  <script src="../Scripts/Common/checkSession.js" type="text/javascript"></script>--%>
+    <script src='<%= ResolveClientUrl("~/Scripts/Common/checkSession.js")%>' type="text/javascript"></script>
+    <link href='<%= ResolveClientUrl("~/Scripts/Common/checkSession.js")%>' rel="stylesheet"
+        type="text/css" />
+    <style type="text/css">
+        .stat1 .val_sec .link
+        {
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 4000;
+            margin: 0 3px;
+            text-decoration: none;
+        }
+        .stat1 .val_sec .link:hover
+        {
+            color: #FF9F00;
+        }
+       /* .welcome
+        {
+            color: #FF9F00;
+            font-size: 12px;
+            font-weight: 4000;
+            margin: 0 3px;
+            text-decoration: none;
+            float: right;
+        }*/
+        
+.welcome {
+    color: #ff9f00;
+    float: left;
+    font-size: 12px;
+    margin: 0 3px;
+    text-align: right;
+    text-decoration: none;
+    width: 100%;
+}
+.ac_nav
+{
+    float: left;
+    width: 100%;
+   }
+
+        .search-bg2
+        {
+            width: 246px;
+            height: 28px;
+            float: left;
+            line-height: 28px;
+            padding: 0 5px;
+            background: url(../images/search-bg2.png) 0 0 no-repeat;
+            border: 0;
+        }
+        #footer
+        {
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: none repeat scroll 0 0 #024E81;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background: none repeat scroll 0 0 #1C1B1B;">
+    <form id="form1" runat="server">
+    <asp:HiddenField runat="server" ID="hdnSitePath" ClientIDMode="Static"></asp:HiddenField>
+    <!-- header-->
+    <div class="h_sec">
+        <div class="container">
+            &nbsp;</div>
+    </div>
+    <div class="bg_sec">
+        <div class="container">
+            <div class="row">
+                <!-- logo section-->
+                <div class="logo-sec">
+                    <%-- <a href="#">--%>
+                    <%--  <img src="../../images/logo.png" /></a>--%>
+                    <img src="<%=_sitePath %>images/logo.png" /><%--</a>--%>
+                </div>
+                <!-- right sec-->
+                <!-- right sec-->
+                <!-- logo section-->
+                <!-- header-->
+                <!-- form section -->
+                <div class="main-sec">
+                    <div class="info_sec">
+                        <%--<div class="ac_open">
+                            <h1>
+                                Open Account with Company</h1>
+                        </div>--%>
+                        <div class="welcome">
+                            <label id="lblLoginUser">
+                            </label>
+                            <a style="cursor: pointer;  margin-right: 4px;">
+                                <abbr title="Logout">
+                                    <img alt="Logout" id="btnLogout" style="position: relative; left: 3px; top: 0px;"
+                                        title="Logout" src="<%=_sitePath %>images/logout.png" /></abbr></a>
+                        </div>
+                        <div class="ac_nav">
+                            <ul>
+                                <li><a href="Dashboard.aspx">Dashboard</a></li>
+                                <li><a href="ForexManagement.aspx">Manage Forex</a></li>
+                                <%--<li><a href="binary-history.html">Binary History</a></li>
+                                <li><a href="forex-history.html">Forex History</a></li>
+                                <li><a href="bonus-summary.html">Bonus Summary</a></li>
+                                <li><a href="trading-stat.html">Trading Statistics</a></li>--%>
+                                <%--<li><a class="active" href="ChangePassword.aspx">Change Password</a></li>--%>
+                                <li><a href="ChangePassword.aspx">Change Password</a></li>
+                                <li><a href="UserManagement.aspx">User Management</a></li>
+                               <%-- <li><a href="TradeHistory.aspx">Trade History</a></li>--%>
+                            </ul>
+                        </div>
+                        <div class="ac_open">
+                            <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+                <!-- form section-->
+            </div>
+        </div>
+    </div>
+    <!-- footer sec-->
+    <%-- <div id="footer">
+        All Rights Reserved &copy; Moty Limited 2014
+    </div>--%>
+    <%--<div class="footer_sec">
+        <div class="container">
+            <div id="footer" class="row">
+                <ul>
+                    <li><a href="#">Open Account</a></li>
+                    <li><a href="#">Trade</a></li>
+                    <li><a href="#">Open Account</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="copy">
+                    <ul>
+                        <li>All Rights Reserved &copy; Moty Limited 2014</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>--%>
+    <div class="footer_sec">
+        <div class="container">
+            <div class="row">
+                <div class="copy">
+                    <ul>
+                        <li>All Rights Reserved &copy; Moty Limited 2014</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer sec-->
+    </form>
+</body>
+</html>

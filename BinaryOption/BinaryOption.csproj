@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A82EAC4-3993-4D1A-A300-68A3ADBCCD22}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BinaryOption</RootNamespace>
+    <AssemblyName>BinaryOption</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ChangePassword.aspx" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\ForexManagement.aspx" />
+    <Content Include="Admin\ForgotPassword.aspx" />
+    <Content Include="Admin\TradeHistory.aspx" />
+    <Content Include="Admin\UserLogin.aspx" />
+    <Content Include="Admin\UserManagement.aspx" />
+    <Content Include="css\assets\arrowleft.png" />
+    <Content Include="css\assets\arrowright.png" />
+    <Content Include="css\assets\arrow_left.png" />
+    <Content Include="css\assets\arrow_left2.png" />
+    <Content Include="css\assets\arrow_right.png" />
+    <Content Include="css\assets\arrow_right2.png" />
+    <Content Include="css\assets\boxed_bgtile.png" />
+    <Content Include="css\assets\bullet.png" />
+    <Content Include="css\assets\bullets.png" />
+    <Content Include="css\assets\bullet_boxed.png" />
+    <Content Include="css\assets\coloredbg.png" />
+    <Content Include="css\assets\loader.gif" />
+    <Content Include="css\assets\navigdots.png" />
+    <Content Include="css\assets\navigdots_bgtile.png" />
+    <Content Include="css\assets\shadow1.png" />
+    <Content Include="css\assets\shadow2.png" />
+    <Content Include="css\assets\shadow3.png" />
+    <Content Include="css\assets\small_left.png" />
+    <Content Include="css\assets\small_left_boxed.png" />
+    <Content Include="css\assets\small_right.png" />
+    <Content Include="css\assets\small_right_boxed.png" />
+    <Content Include="css\colors\blue-color.css" />
+    <Content Include="css\dashboard.css" />
+    <Content Include="css\font-awesome\font-awesome.min.css" />
+    <Content Include="css\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="css\grid.css" />
+    <Content Include="css\jquery-ui-1.9.2.custom.css" />
+    <Content Include="css\jquery.ui.datepicker.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style2.css" />
+    <Content Include="css\tradestyle.css" />
+    <Content Include="images\accordion-toggle.png" />
+    <Content Include="images\active.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\bg-image.jpg" />
+    <Content Include="images\breadcrumbs.png" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\carousel-prev-next.png" />
+    <Content Include="images\chat-photo.png" />
+    <Content Include="images\chat-text.png" />
+    <Content Include="images\clients-logo.png" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\colorpicker\colorpicker_background.png" />
+    <Content Include="images\colorpicker\colorpicker_hex.png" />
+    <Content Include="images\colorpicker\colorpicker_hsb_b.png" />
+    <Content Include="images\colorpicker\colorpicker_hsb_h.png" />
+    <Content Include="images\colorpicker\colorpicker_hsb_s.png" />
+    <Content Include="images\colorpicker\colorpicker_indic.gif" />
+    <Content Include="images\colorpicker\colorpicker_overlay.png" />
+    <Content Include="images\colorpicker\colorpicker_rgb_b.png" />
+    <Content Include="images\colorpicker\colorpicker_rgb_g.png" />
+    <Content Include="images\colorpicker\colorpicker_rgb_r.png" />
+    <Content Include="images\colorpicker\colorpicker_select.gif" />
+    <Content Include="images\colorpicker\colorpicker_submit.png" />
+    <Content Include="images\comment-arrow.png" />
+    <Content Include="images\commodities.jpg" />
+    <Content Include="images\db-img-bg.png" />
+    <Content Include="images\downarrow.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\error.png" />
+    <Content Include="images\eur.png" />
+    <Content Include="images\favicon%283%29.ico" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\forex.jpg" />
+    <Content Include="images\fx-black-in-white.png" />
+    <Content Include="images\fx.jpg" />
+    <Content Include="images\google-play-store.png" />
+    <Content Include="images\grapha.png" />
+    <Content Include="images\Green-Blank.png" />
+    <Content Include="images\happy-clients-02.html" />
+    <Content Include="images\high.png" />
+    <Content Include="images\icon_apple_store.png" />
+    <Content Include="images\icon_arrow_down.png" />
+    <Content Include="images\icon_arrow_up.png" />
+    <Content Include="images\inactive.png" />
+    <Content Include="images\indices.jpg" />
+    <Content Include="images\JsLoader.gif" />
+    <Content Include="images\loader10.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo-footer.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\low.png" />
+    <Content Include="images\notice.png" />
+    <Content Include="images\partner-logo.png" />
+    <Content Include="images\pass.png" />
+    <Content Include="images\pdf-icon.png" />
+    <Content Include="images\red-blank.png" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\regulationlinks.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\search-bg.png" />
+    <Content Include="images\search-bg2.png" />
+    <Content Include="images\secured-by.png" />
+    <Content Include="images\security-code.png" />
+    <Content Include="images\shadow-bottom.png" />
+    <Content Include="images\shadow-top.png" />
+    <Content Include="images\SiteImages\close.gif" />
+    <Content Include="images\SiteImages\error.png" />
+    <Content Include="images\SiteImages\success.png" />
+    <Content Include="images\SiteImages\warning.png" />
+    <Content Include="images\slider-next-small.png" />
+    <Content Include="images\slider-next.png" />
+    <Content Include="images\slider-prev-small.png" />
+    <Content Include="images\slider-prev.png" />
+    <Content Include="images\sort.png" />
+    <Content Include="images\sprite_footer.png" />
+    <Content Include="images\stock.jpg" />
+    <Content Include="images\success.png" />
+    <Content Include="images\top-trader-rank-banner.png" />
+    <Content Include="images\top.png" />
+    <Content Include="images\uparrow.png" />
+    <Content Include="images\us-flag.png" />
+    <Content Include="images\viewtrading.png" />
+    <Content Include="images\warning.png" />
+    <Content Include="images\wt_ico.png" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\flickr.js" />
+    <Content Include="js\GraphTheme.js" />
+    <Content Include="js\instagram.js" />
+    <Content Include="js\isotope.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.theme.plugins.min.js" />
+    <Content Include="js\jquery.themepunch.revolution.min.js" />
+    <Content Include="js\jquery.tooltips.min.js" />
+    <Content Include="js\jquery.transit.min.js" />
+    <Content Include="js\jquery.twitter.js" />
+    <Content Include="js\map.min.js" />
+    <Content Include="js\navigation.min.js" />
+    <Content Include="js\prettyPhoto.min.js" />
+    <Content Include="js\scrolltopcontrol.js" />
+    <Content Include="Scripts\Admin\ChangePassword.js" />
+    <Content Include="Scripts\Admin\ForexTrade.js" />
+    <Content Include="Scripts\Admin\forgotPassword.js" />
+    <Content Include="Scripts\Admin\Login.js" />
+    <Content Include="Scripts\Admin\TradingHistory.js" />
+    <Content Include="Scripts\Admin\UserManagement.js" />
+    <Content Include="Scripts\Common\checkSession.js" />
+    <Content Include="Scripts\Common\jquery.paginate.js" />
+    <Content Include="Scripts\Common\jquery.twbsPagination.js" />
+    <Content Include="Scripts\Common\jquery.twbsPagination.min.js" />
+    <Content Include="Scripts\Newjquery-1.7.min.js" />
+    <Content Include="Scripts\Plugins\easyResponsiveTabs.js" />
+    <Content Include="Scripts\Plugins\exporting.js" />
+    <Content Include="Scripts\Plugins\highstock.js" />
+    <Content Include="Scripts\Plugins\jquery-1.10.2.js" />
+    <Content Include="Scripts\Plugins\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\Plugins\jquery-1.6.3.min.js" />
+    <Content Include="Scripts\Plugins\jquery-2.0.3.js" />
+    <Content Include="Scripts\Plugins\jquery.msgBox.js" />
+    <Content Include="Scripts\Plugins\jquery.simplePagination.js" />
+    <Content Include="Scripts\Plugins\jquery.toastmessage.tests.js" />
+    <Content Include="Scripts\Plugins\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\Plugins\jquery.validationEngine-en.js" />
+    <Content Include="Scripts\Plugins\jquery.validationEngine.js" />
+    <Content Include="Scripts\Plugins\jqueryLogin.cookie.js" />
+    <Content Include="Scripts\Plugins\Notification.js" />
+    <Content Include="Scripts\User\forgetPassword.js" />
+    <Content Include="Scripts\User\Notification.js" />
+    <Content Include="Scripts\User\open-account.js" />
+    <Content Include="Scripts\User\Registration.js" />
+    <Content Include="Scripts\User\Trade.js" />
+    <Content Include="Scripts\User\UserLogin.js" />
+    <Content Include="Styles\Adminstyle.css" />
+    <Content Include="Styles\Content\pstyle.css" />
+    <Content Include="Styles\easy-responsive-tabs.css" />
+    <Content Include="Styles\jquery.toastmessage.css" />
+    <Content Include="Styles\msgBoxLight.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\validationEngine.jquery.css" />
+    <Content Include="UserControl\Menu.ascx" />
+    <Content Include="User\404-error.html" />
+    <Content Include="User\about-us.html" />
+    <Content Include="User\dashboard.html" />
+    <Content Include="User\elements.html" />
+    <Content Include="User\ForgetPassword.aspx" />
+    <Content Include="User\open-account.html" />
+    <Content Include="User\OpenAccount.aspx" />
+    <Content Include="User\Tradeold.aspx" />
+    <Content Include="User\Trade.aspx" />
+    <Content Include="User\WebForm2.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebServices\ChangePassword.asmx" />
+    <Content Include="WebServices\Forex.asmx" />
+    <Content Include="WebServices\ForgotPassword.asmx" />
+    <Content Include="WebServices\Login.asmx" />
+    <Content Include="WebServices\User\ForgetPassword.asmx" />
+    <Content Include="WebServices\User\Notification.asmx" />
+    <Content Include="WebServices\User\UserLogin.asmx" />
+    <Content Include="WebServices\UserManagement.asmx" />
+    <Content Include="WebServices\User\Registration.asmx" />
+    <Content Include="WebServices\User\Trade.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminNew.Master.cs">
+      <DependentUpon>AdminNew.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminNew.Master.designer.cs">
+      <DependentUpon>AdminNew.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ForexManagement.aspx.cs">
+      <DependentUpon>ForexManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ForexManagement.aspx.designer.cs">
+      <DependentUpon>ForexManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TradeHistory.aspx.cs">
+      <DependentUpon>TradeHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TradeHistory.aspx.designer.cs">
+      <DependentUpon>TradeHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\OpenAccount.aspx.cs">
+      <DependentUpon>OpenAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\OpenAccount.aspx.designer.cs">
+      <DependentUpon>OpenAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Tradeold.aspx.cs">
+      <DependentUpon>Tradeold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Tradeold.aspx.designer.cs">
+      <DependentUpon>Tradeold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Use.Master.cs">
+      <DependentUpon>Use.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Use.Master.designer.cs">
+      <DependentUpon>Use.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\Trade.aspx.cs">
+      <DependentUpon>Trade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Trade.aspx.designer.cs">
+      <DependentUpon>Trade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\ChangePassword.asmx.cs">
+      <DependentUpon>ChangePassword.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Forex.asmx.cs">
+      <DependentUpon>Forex.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\ForgotPassword.asmx.cs">
+      <DependentUpon>ForgotPassword.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\Login.asmx.cs">
+      <DependentUpon>Login.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\User\ForgetPassword.asmx.cs">
+      <DependentUpon>ForgetPassword.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\User\Notification.asmx.cs">
+      <DependentUpon>Notification.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\User\UserLogin.asmx.cs">
+      <DependentUpon>UserLogin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\UserManagement.asmx.cs">
+      <DependentUpon>UserManagement.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\User\Registration.asmx.cs">
+      <DependentUpon>Registration.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServices\User\Trade.asmx.cs">
+      <DependentUpon>Trade.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BinaryOptionBL\BinaryOptionBL.csproj">
+      <Project>{30A88528-E7CE-4B37-B400-D49D3E29635C}</Project>
+      <Name>BinaryOptionBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BinaryOptionBO\BinaryOptionBO.csproj">
+      <Project>{0F64A8E0-CAD0-44D5-9BBE-43FE2B957FD5}</Project>
+      <Name>BinaryOptionBO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminNew.Master" />
+    <None Include="css\font-awesome\fontawesome-webfont.eot" />
+    <None Include="css\font-awesome\fontawesome-webfont.ttf" />
+    <None Include="css\font-awesome\fontawesome-webfont.woff" />
+    <None Include="Properties\PublishProfiles\BinaryOptions.pubxml" />
+    <Content Include="User\Use.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7124</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

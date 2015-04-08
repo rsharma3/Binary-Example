@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryOption", "BinaryOption\BinaryOption.csproj", "{1A82EAC4-3993-4D1A-A300-68A3ADBCCD22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryOptionBL", "BinaryOptionBL\BinaryOptionBL.csproj", "{30A88528-E7CE-4B37-B400-D49D3E29635C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryOptionBO", "BinaryOptionBO\BinaryOptionBO.csproj", "{0F64A8E0-CAD0-44D5-9BBE-43FE2B957FD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryOptionDA", "BinaryOptionDA\BinaryOptionDA.csproj", "{F5D85D35-12E4-41EA-91EE-0CE6BCC7CD00}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.8.18.43:8080/tfs/dotnet
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BinaryOption\\BinaryOption.csproj
+		SccProjectName1 = BinaryOption
+		SccLocalPath1 = BinaryOption
+		SccProjectUniqueName2 = BinaryOptionBL\\BinaryOptionBL.csproj
+		SccProjectName2 = BinaryOptionBL
+		SccLocalPath2 = BinaryOptionBL
+		SccProjectUniqueName3 = BinaryOptionBO\\BinaryOptionBO.csproj
+		SccProjectName3 = BinaryOptionBO
+		SccLocalPath3 = BinaryOptionBO
+		SccProjectUniqueName4 = BinaryOptionDA\\BinaryOptionDA.csproj
+		SccProjectName4 = BinaryOptionDA
+		SccLocalPath4 = BinaryOptionDA
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A82EAC4-3993-4D1A-A300-68A3ADBCCD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A82EAC4-3993-4D1A-A300-68A3ADBCCD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A82EAC4-3993-4D1A-A300-68A3ADBCCD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A82EAC4-3993-4D1A-A300-68A3ADBCCD22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30A88528-E7CE-4B37-B400-D49D3E29635C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A88528-E7CE-4B37-B400-D49D3E29635C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A88528-E7CE-4B37-B400-D49D3E29635C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A88528-E7CE-4B37-B400-D49D3E29635C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F64A8E0-CAD0-44D5-9BBE-43FE2B957FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F64A8E0-CAD0-44D5-9BBE-43FE2B957FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F64A8E0-CAD0-44D5-9BBE-43FE2B957FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F64A8E0-CAD0-44D5-9BBE-43FE2B957FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D85D35-12E4-41EA-91EE-0CE6BCC7CD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D85D35-12E4-41EA-91EE-0CE6BCC7CD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D85D35-12E4-41EA-91EE-0CE6BCC7CD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D85D35-12E4-41EA-91EE-0CE6BCC7CD00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

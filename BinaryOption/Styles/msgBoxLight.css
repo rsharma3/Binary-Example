@@ -1,0 +1,135 @@
+﻿div.msgBox
+{
+    border: 1px solid #B8B8B8;
+    box-shadow: 0 0 15px 3px #333333;
+    color: #00335E;
+    min-width: 310px;
+    padding: 0px;
+    position: fixed;
+    z-index: 1010;
+    background-color:#FFFFFF;
+}
+div.msgBoxBackGround
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.9;
+    z-index: 1007;
+}
+div.msgBoxTitle
+{
+    border-bottom: 1px solid #0D9CE0;
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 5px 10px;
+    background-color:#0D9CE0;
+}
+.msgBoxContainer{padding:0 10px;}
+div.msgBoxImage
+{
+    margin: 15px 5px 0 5px;
+    display: inline-block;
+    float: left;
+}
+div.msgBoxImage img
+{
+    width: 25px;
+}
+div.msgBoxContent
+{
+    font-family: arial;
+    color: #303030;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    height: 55px;
+    margin: 0 0 6px 3px;
+    width: 230px;
+}
+div.msgBoxContent p
+{
+    padding: 0;
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+div.msgBoxContent span
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+div.msgBoxButtons
+{
+    display: inline-block;
+    width: 96%;
+    text-align: right;
+    padding:0 2% 10px 2%;
+    
+}
+div.msgBoxButtons input[type='button']
+{
+    background: #0D9CE0;
+    font-size: 12px;
+    font-weight:bold;
+    font-family:Arial,Helvetica,sans-serif;
+    color: #fff;
+     border: 1px solid #05928B;
+    border-radius: 2px;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+div.msgBoxButtons input[type='button']:hover
+{
+    background: #00B6AD;
+   
+}
+div.msgBoxButtons input[type='button']:active
+{
+    background-color: #00B6AD;
+    color: White;
+}
+div.msgBoxButtons input[type='button'].inverse
+{background: #2A2A2A;border: 1px solid #222222;
+  
+}
+div.msgBoxButtons input[type='button'].inverse:hover
+{
+    background: #3D3B3B;
+   
+}
+div.msgBoxButtons input[type='button'].inverse:active
+{
+    background-color: #3D3B3B;
+    color: White;
+}
+div.msgBoxInputs
+{
+    margin: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    width: 195px;
+}
+div.msgInput input[type='text'], div.msgInput input[type='password']
+{
+    padding: 4px;
+    border: 1px solid #DFDFDF;
+    color: #2f2f2f;
+    width: 180px;
+}
+div.msgInput text
+{
+    color: #2f2f2f;
+    font-size: 10pt;
+}
